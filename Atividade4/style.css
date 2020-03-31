@@ -1,0 +1,18 @@
+.fundo_azul_claro {
+    background-color: #cdf0ff;
+}
+
+.fundo_azul_escuro_borda_vermelha {
+    background-color: #0066aa;
+    border-width: 1%;
+    border-color: red;
+}
+
+.borda_preta {
+    border-width: 1%;
+    border-color: black;
+}
+
+.conteudo_auxiliar {
+
+}

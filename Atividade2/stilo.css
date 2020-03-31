@@ -1,0 +1,17 @@
+.icone-furb {
+    float: left;
+    width: 5%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    flex-grow: 1;
+}
+
+.header-navigation {
+    float: right;
+}
