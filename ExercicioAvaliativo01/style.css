@@ -1,0 +1,28 @@
+tbody tr:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+tbody tr:last-child td {
+    color: white !important;
+    background-color: #c4180c;
+}
+
+table {
+    caption-side: bottom;
+}
+
+.conteudo {
+    text-align: center;
+    border-color: #d8d8d8;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+tr td {
+    padding: 0px;
+    color: #616161;
+}
+
+caption {
+    text-align: right;
+}
