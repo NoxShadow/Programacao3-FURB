@@ -1,14 +1,45 @@
-function createHead(pos) {
-    return '<header>\n'
-        + '    <h1>Exercício Avaliativo 2</h1> \n'
-        + '</header > \n'
-        + '<nav> \n'
-        + '     <a  href="index.html" ' + (pos === 0 ? "class='current'" : "") + '>Introdução</a> \n'
-        + '     <a  href="parte1.html" ' + (pos === 1 ? "class='current'" : "") + '>Numero 1</a> \n'
-        + '     <a  href="parte2.html" ' + (pos === 2 ? "class='current'" : "") + '>Numero 2</a> \n'
-        + '     <a  href="parte3.html" ' + (pos === 3 ? "class='current'" : "") + '>Numero 3</a> \n'
-        + '     <a  href="parte4.html" ' + (pos === 4 ? "class='current'" : "") + '>Numero 4</a> \n'
-        + '     <a  href="parte5.html" ' + (pos === 5 ? "class='current'" : "") + '>Numero 5</a> \n'
-        + '     <a  href="parte6.html" ' + (pos === 6 ? "class='current'" : "") + '>Numero 6</a> \n'
-        + '</nav> \n';
+const caminhos = ["index.html",
+    "parte1.html",
+    "parte2.html",
+    "parte3.html",
+    "parte4.html",
+    "parte5.html",
+    "parte6.html"];
+
+function createHeader(pos) {
+    const h1 = document.createElement('h1');
+    h1.innerText = 'Exercício Avaliativo 2';
+    const header = document.createElement('header');
+    header.appendChild(h1);
+
+    const nav = document.createElement('nav');
+    nav.id = 'main-nav';
+    for (let index = 0; index < caminhos.length; index++) {
+        const caminho = caminhos[index];
+        const a = document.createElement('a');
+
+        if (pos === index) {
+            a.classList.add('current');
+        }
+
+        a.href = caminho;
+
+        a.innerText = getTextPosicao(index);
+
+        nav.appendChild(a);
+    }
+
+    const body = document.getElementById('content');
+    body.appendChild(header);
+    body.appendChild(nav);
+}
+
+function getTextPosicao(pos) {
+    if (typeof (pos) !== 'number') {
+        return;
+    }
+    if (pos === 0) {
+        return 'Introdução';
+    }
+    return 'Parte ' + pos;
 }

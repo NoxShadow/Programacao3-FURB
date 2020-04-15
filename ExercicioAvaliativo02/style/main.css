@@ -1,9 +1,16 @@
+* {
+    color: #02020a;
+    border-color: #e1e2ef;
+}
+
 html {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    border: 1px solid #000;
+    border: 1px solid;
     height: 100%;
+    padding: 0%;
+    background-color: #bfacaa;
 }
 
 html element {
@@ -33,9 +40,31 @@ html nav a {
     text-decoration: none;
     text-align: center;
     padding: 5px 10px;
-    border: 1px solid gray;
+    border: 1px solid;
 }
 
 .current {
     text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+header,
+#main-nav {
+    background-color: #6200ee;
+    padding: 2% 0;
+}
+
+header h1,
+#main-nav {
+    color: white;
+    border-color: #3700b3;
 }
