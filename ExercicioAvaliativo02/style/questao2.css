@@ -1,0 +1,13 @@
+img {
+    width: 128px;
+    height: 128px;
+    padding: 0px 10px;
+}
+
+td:hover {
+    border: 1px black solid;
+}
+
+table {
+    margin: 0 auto;
+}

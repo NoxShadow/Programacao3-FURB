@@ -1,10 +1,10 @@
 const caminhos = ["index.html",
-    "parte1.html",
-    "parte2.html",
-    "parte3.html",
-    "parte4.html",
-    "parte5.html",
-    "parte6.html"];
+    "questao1.html",
+    "questao2.html",
+    "questao3.html",
+    "questao4.html",
+    "questao5.html",
+    "questao6.html"];
 
 function createHeader(pos) {
     const h1 = document.createElement('h1');
@@ -41,5 +41,5 @@ function getTextPosicao(pos) {
     if (pos === 0) {
         return 'Introdução';
     }
-    return 'Parte ' + pos;
+    return 'Questão ' + pos;
 }
