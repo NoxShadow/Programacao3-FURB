@@ -1,0 +1,15 @@
+li:hover {
+    color: red;
+}
+
+li {
+    cursor: pointer;
+    width: 30%;
+    font-family: Arial;
+    font-size: 16;
+    color: blue;
+}
+
+label {
+    font-weight: bold;
+}
