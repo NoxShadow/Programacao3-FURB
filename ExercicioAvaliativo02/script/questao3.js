@@ -12,7 +12,6 @@ function renderList() {
 
         lista.appendChild(createListItem(texto, index));
     }
-
 }
 
 function remove(pos) {
@@ -36,7 +35,6 @@ function createListItem(texto, index) {
     item.setAttribute(posAttribute, index);
     item.innerText = texto;
     item.onclick = function () {
-        console.log("removendo");
         remove(index);
     };
 
