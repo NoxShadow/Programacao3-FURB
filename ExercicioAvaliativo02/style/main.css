@@ -8,7 +8,7 @@ html {
     margin-right: auto;
     width: 75%;
     border: 1px solid;
-    height: 100%;
+    height: fit-content;
     padding: 0%;
     background-color: #bfacaa;
 }
@@ -28,7 +28,7 @@ html nav {
     display: flex;
     width: 100%;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 1%;
@@ -50,8 +50,10 @@ html nav a {
 
 body {
     margin: 0;
-    height: 100%;
+    min-height: max-content;
     background-color: white;
+    overflow-y: scroll;
+    padding-bottom: 40px;
 }
 
 h1 {
@@ -68,4 +70,14 @@ header h1,
 #main-nav {
     color: white;
     border-color: #3700b3;
+}
+
+body p:first-of-type {
+    padding-bottom: 2%;
+    border-bottom: 2px dotted black;
+    margin: 0 2%;
+}
+
+#introducao {
+    padding: 10px 2%;
 }

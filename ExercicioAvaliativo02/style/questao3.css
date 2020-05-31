@@ -1,0 +1,19 @@
+li:hover {
+    color: red;
+}
+
+li {
+    cursor: pointer;
+    width: 30%;
+    font-family: Arial;
+    font-size: 16px;
+    color: blue;
+}
+
+label {
+    font-weight: bold;
+}
+
+div {
+    padding: 10px 2%;
+}

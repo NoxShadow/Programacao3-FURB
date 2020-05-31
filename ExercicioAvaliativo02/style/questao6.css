@@ -1,0 +1,25 @@
+div {
+    padding: 10px 2%;
+}
+
+button {
+    animation: fade 1s infinite;
+}
+
+@keyframes fade {
+    0% {
+        background-color: aqua;
+    }
+    25% {
+        background-color: greenyellow;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: greenyellow;
+    }
+    100% {
+        background-color: aqua;
+    }
+}

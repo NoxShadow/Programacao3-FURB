@@ -9,7 +9,8 @@
     <script src="script/main.js"></script>
     <link rel="stylesheet" href="style/main.css">
 
-    <link rel="stylesheet" href="style/parte1.css">
+    <script src="script/questao3.js"></script>
+    <link rel="stylesheet" href="style/questao3.css">
 
 </head>
 
@@ -17,7 +18,31 @@
     <script>
         createHeader(3);
     </script>
-    Olá mundo 3!
+
+    <p> <b>Questão 3</b>: Crie um código JavaScript que lê o conteúdo de um array e cria uma lista não ordenada (ul) na
+        página com o conteúdo
+        desse array. O texto da lista deve ser em fonte “Arial”, tamanho 16, cor azul. Coloque um título para essa
+        lista, o
+        mesmo deve ser em negrito</p>
+
+    <div>
+        <section>
+            <label for="listaConteudo">LISTA</label>
+            <ul id="listaConteudo">
+            </ul>
+        </section>
+        <section>
+            <input type="text" name="addList" id="addListTextInput">
+            <input type="button" value="Adicionar na lista" onclick="addListItem()">
+        </section>
+
+        <span>obs.: Para remover da lista, clicar no item</span>
+
+    </div>
 </body>
 
 </html>
+
+<script>
+    renderList();
+</script>

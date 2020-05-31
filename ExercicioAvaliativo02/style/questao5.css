@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+}

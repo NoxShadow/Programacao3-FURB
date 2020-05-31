@@ -10,6 +10,10 @@ ul {
     float: left;
 }
 
+#navigation {
+    padding: 10px 2%;
+}
+
 #navigation li {
     position: relative;
     float: left;

@@ -1,0 +1,9 @@
+main {
+    display: inline;
+}
+
+ul li:first-child {
+    list-style: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
