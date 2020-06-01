@@ -1,0 +1,39 @@
+.btn-submit {
+    margin-top: 50px;
+    width: 100px;
+}
+
+.login-area {
+    margin-top: 10px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+    background-color: rgb(173, 170, 170);
+}
+
+#ref {
+    color: grey;
+}
+
+.side-image {
+    display: inline;
+    margin-right: 1px;
+}
+
+section {
+    display: block;
+}
+
+#fairy-image {
+    float: right;
+}
+
+body {
+    background-color: #364645;
+}
+
+main.container {
+    background-color: #584237;
+    padding: 20px;
+    margin-bottom: 40px;
+    color: #eae3d1;
+}
