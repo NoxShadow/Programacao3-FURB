@@ -1,0 +1,31 @@
+.acao {
+    float: left;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.form {
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.divisor {
+    border-left: 1px solid #000;
+    height: 20px;
+    float: left;
+    margin: 0px 5px 0px 5px;
+}
+
+thead {
+    background-color: gray;
+}
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}

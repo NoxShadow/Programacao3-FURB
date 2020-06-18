@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            startComponents();
+            loadEmployeeList();
+        })
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <h3>Adicionando novo Empregado</h3>
+        <section>
+            <label for="name-text-input">Nome: </label>
+            <input type="text" placeholder="Jonathan Manoel Borges" name="name" id="name-text-input">
+        </section>
+        <section>
+            <label for="salary-number-input">Salário: </label>
+            <input type="number" placeholder="10000.00" step="0.01" min="0" name="salary" id="salary-number-input">
+        </section>
+        <section>
+            <label for="age-number-input">Idade: </label>
+            <input type="number" placeholder="18" min="1" name="age" id="age-number-input">
+        </section>
+        <section>
+            <label for="avatar-text-input">Avatar: </label>
+            <input type="text" name="avatar" id="avatar-text-input">
+        </section>
+        <section>
+            <button id="create-button">Criar</button>
+            <button id="save-button">Salvar</button>
+            <button id="cancel-button">Cancelar</button>
+        </section>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Salário</th>
+                <th>Idade</th>
+                <th>Avatar</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="table-conteudo">
+        </tbody>
+    </table>
+</body>
+
+</html>
